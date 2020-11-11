@@ -10,8 +10,12 @@ import in.tigercloud.serenity_ore.SerenityOre;
  */
 public class Names {
 	// Items
+	public final static String itemSerenityDust = "serenity_dust";
+	public final static String itemSerenityPearl = "serenity_pearl";
 
 	// Blocks
+	public final static String blockSerenityOre = "serenity_ore";
+	public final static String blockSugar = "sugar_block";
 
 	// ----------------------------------------------------------
 	// Helper methods below

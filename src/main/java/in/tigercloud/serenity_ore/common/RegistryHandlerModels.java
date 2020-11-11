@@ -1,5 +1,6 @@
 package in.tigercloud.serenity_ore.common;
 
+import in.tigercloud.serenity_ore.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ import java.util.Objects;
 /**
  * Model Register Handler
  */
-@Mod.EventBusSubscriber(value = Side.CLIENT)
+@Mod.EventBusSubscriber(value = Side.CLIENT, modid=Reference.MOD_ID)
 public class RegistryHandlerModels {
 	/**
 	 * Registers all Models for Items and Blocks

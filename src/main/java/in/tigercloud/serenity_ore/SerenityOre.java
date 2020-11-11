@@ -1,6 +1,9 @@
 package in.tigercloud.serenity_ore;
 
+import in.tigercloud.serenity_ore.common.ServerProxy;
 import in.tigercloud.serenity_ore.lib.MainModInterface;
+import in.tigercloud.serenity_ore.lib.Names;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -19,26 +22,35 @@ public class SerenityOre implements MainModInterface {
 	@Mod.Instance(Reference.MOD_ID)
 	public static SerenityOre instance;
 
-	@SidedProxy(clientSide = Reference.FULL_MAIN_NAMESPACE + ".ClientProxy", serverSide = Reference.FULL_MAIN_NAMESPACE + ".ServerProxy")
+	@SidedProxy(clientSide = Reference.FULL_MAIN_NAMESPACE + ".common.ClientProxy", serverSide = Reference.FULL_MAIN_NAMESPACE + ".common.ServerProxy")
 	public static ServerProxy proxy;
-
-	public static CreativeTabs creativeTab = new CreativeTabs(Reference.RESOURCE_PREFIX) {
-		/**
-		 * Get the Tab-Icon
-		 *
-		 * @return Item-Icon
-		 */
-		@Override
-		public ItemStack getTabIconItem() {
-			return null;
-		}
-	};
 
 	/**
 	 * SerenityOre Constructor
 	 */
 	public SerenityOre() {
 		instance = this;
+		initCreativeTabs();
+	}
+
+	/**
+	 * Inits all Creative Tabs
+	 */
+	@Override
+	public void initCreativeTabs() {
+		Reference.creativeTab = new CreativeTabs(Reference.RESOURCE_PREFIX + "creative_tab") {
+			/**
+			 * Get the Tab-Icon
+			 *
+			 * @return Item-Icon
+			 */
+			@Override
+			public ItemStack getTabIconItem() {
+				return new ItemStack(
+						new in.tigercloud.serenity_ore.block.SerenityOre(Names.blockSerenityOre, Material.ROCK)
+				);
+			}
+		};
 	}
 
 	/**

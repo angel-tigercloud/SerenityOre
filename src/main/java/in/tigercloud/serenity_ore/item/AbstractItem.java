@@ -1,4 +1,4 @@
-package in.tigercloud.serenity_ore.common;
+package in.tigercloud.serenity_ore.item;
 
 import in.tigercloud.serenity_ore.Reference;
 import net.minecraft.item.Item;
@@ -14,7 +14,7 @@ public abstract class AbstractItem extends Item {
 	 *
 	 * @param name Name of the Item
 	 */
-	AbstractItem(String name) {
+	public AbstractItem(String name) {
 		this.setRegistryName(new ResourceLocation(Reference.MOD_ID, name));
 		this.setUnlocalizedName(Objects.requireNonNull(this.getRegistryName()).toString());
 	}

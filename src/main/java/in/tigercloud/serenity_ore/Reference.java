@@ -1,5 +1,6 @@
 package in.tigercloud.serenity_ore;
 
+import net.minecraft.creativetab.CreativeTabs;
 import org.apache.logging.log4j.Logger;
 
 /**
@@ -13,4 +14,5 @@ public class Reference {
 	public static final String RESOURCE_PREFIX = MOD_ID + ":";
 	public static final String FULL_MAIN_NAMESPACE = "in.tigercloud.serenity_ore";
 	public static Logger logger;
+	public static CreativeTabs creativeTab;
 }

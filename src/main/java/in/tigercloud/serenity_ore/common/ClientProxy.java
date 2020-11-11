@@ -1,4 +1,4 @@
-package in.tigercloud.serenity_ore;
+package in.tigercloud.serenity_ore.common;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

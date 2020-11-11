@@ -4,11 +4,19 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Interface with most functions for the Main-Mod File
  */
 public interface MainModInterface {
+	/**
+	 * Inits all Creative Tabs
+	 */
+	@SideOnly(Side.CLIENT)
+	void initCreativeTabs();
+
 	/**
 	 * Method called in the Forge Pre-Initialization
 	 *
