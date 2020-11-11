@@ -14,23 +14,15 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  *
  * @author Tigercloud
  */
-@Mod(modid = SerenityOre.MOD_ID, name = SerenityOre.MOD_NAME, version = SerenityOre.VERSION, dependencies = SerenityOre.DEPENDENCIES)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = Reference.DEPENDENCIES)
 public class SerenityOre implements MainModInterface {
-	// Constants
-	public static final String MOD_ID = "serenity_ore";
-	public static final String MOD_NAME = "Serenity Ore";
-	public static final String VERSION = "@VERSION@";
-	public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2854,)";
-	public static final String RESOURCE_PREFIX = MOD_ID + ":";
-	public static final String FULL_MAIN_NAMESPACE = "in.tigercloud.serenity_ore";
-
-	@Mod.Instance(MOD_ID)
+	@Mod.Instance(Reference.MOD_ID)
 	public static SerenityOre instance;
 
-	@SidedProxy(clientSide = FULL_MAIN_NAMESPACE + ".ClientProxy", serverSide = FULL_MAIN_NAMESPACE + ".CommonProxy")
-	public static CommonProxy proxy;
+	@SidedProxy(clientSide = Reference.FULL_MAIN_NAMESPACE + ".ClientProxy", serverSide = Reference.FULL_MAIN_NAMESPACE + ".ServerProxy")
+	public static ServerProxy proxy;
 
-	public static CreativeTabs creativeTab = new CreativeTabs(SerenityOre.RESOURCE_PREFIX) {
+	public static CreativeTabs creativeTab = new CreativeTabs(Reference.RESOURCE_PREFIX) {
 		/**
 		 * Get the Tab-Icon
 		 *

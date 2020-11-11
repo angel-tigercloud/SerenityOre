@@ -1,17 +1,14 @@
 package in.tigercloud.serenity_ore;
 
-import in.tigercloud.serenity_ore.init.ModBlocks;
-import in.tigercloud.serenity_ore.init.RegisterBlocks;
-import in.tigercloud.serenity_ore.init.RegisterItems;
 import in.tigercloud.serenity_ore.lib.ProxyInterface;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
- * Common Proxy
+ * Server Proxy
  */
-public class CommonProxy implements ProxyInterface {
+public class ServerProxy implements ProxyInterface {
 	/**
 	 * Method called in the Forge Pre-Initialization
 	 *
@@ -19,9 +16,7 @@ public class CommonProxy implements ProxyInterface {
 	 */
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
-		// Register all items and Blocks
-		RegisterBlocks.init();
-		RegisterItems.init();
+		Reference.logger = event.getModLog();
 	}
 
 	/**
@@ -30,11 +25,7 @@ public class CommonProxy implements ProxyInterface {
 	 * @param event FML-Event
 	 */
 	@Override
-	public void init(FMLInitializationEvent event) {
-		// Register all recipes
-		RegisterBlocks.initRecipes();
-		RegisterItems.initRecipes();
-	}
+	public void init(FMLInitializationEvent event) {}
 
 	/**
 	 * Method called in the Forge Post-Initialization
@@ -42,7 +33,5 @@ public class CommonProxy implements ProxyInterface {
 	 * @param event FML-Event
 	 */
 	@Override
-	public void postInit(FMLPostInitializationEvent event) {
-		// Void
-	}
+	public void postInit(FMLPostInitializationEvent event) {}
 }

@@ -1,5 +1,6 @@
 package in.tigercloud.serenity_ore.lib;
 
+import in.tigercloud.serenity_ore.Reference;
 import in.tigercloud.serenity_ore.SerenityOre;
 
 /**
@@ -23,7 +24,7 @@ public class Names {
 	 * @return Unlocalized Item-Name-String
 	 */
 	public static String getItemNameUnlocalized(String itemName) {
-		return "item." + SerenityOre.RESOURCE_PREFIX + itemName;
+		return "item." + Reference.RESOURCE_PREFIX + itemName;
 	}
 
 	/**
@@ -33,6 +34,6 @@ public class Names {
 	 * @return Unlocalized Item-Name-String
 	 */
 	public static String getBlockNameUnlocalized(String blockName) {
-		return "tile." + SerenityOre.RESOURCE_PREFIX + blockName;
+		return "tile." + Reference.RESOURCE_PREFIX + blockName;
 	}
 }
