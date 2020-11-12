@@ -1,0 +1,11 @@
+// Blocks
+tile.serenity_ore:serenity_ore.name=Serenity Gem Ore
+tile.serenity_ore:serenity_ore_nether.name=Nether Serenity Gem Ore
+tile.serenity_ore:serenity_ore_end.name=End Serenity Gem Ore
+tile.serenity_ore:sugar_block.name=Sugar Block
+
+// Items
+item.serenity_ore:serenity_dust.name=Serenity Gem Dust
+item.serenity_ore:serenity_pearl.name=Serenity Gem Pearl
+
+// Other
