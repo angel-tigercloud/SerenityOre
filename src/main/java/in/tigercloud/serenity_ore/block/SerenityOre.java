@@ -1,19 +1,23 @@
 package in.tigercloud.serenity_ore.block;
 
-import in.tigercloud.serenity_ore.lib.BlockHardness;
-import in.tigercloud.serenity_ore.lib.HarvestLevel;
-import in.tigercloud.serenity_ore.lib.OreDict;
-import in.tigercloud.serenity_ore.lib.ToolStrings;
+import in.tigercloud.serenity_ore.common.ModItems;
+import in.tigercloud.serenity_ore.lib.*;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+
+import java.util.Random;
 
 /**
  * Serenity Ore
  */
 public class SerenityOre extends AbstractBlock {
-	protected static final float FORTUNE_MULTIPLIER = 1.1f;
-	public static final int DROPS_MAX_NORMAL = 6;
-	public static final int DROPS_MIN_NORMAL = 3;
+	public static int FORTUNE_MULTIPLIER = 1;
+	public static int DROPS_MAX_NORMAL = 6;
+	public static int DROPS_MIN_NORMAL = 3;
 
 	/**
 	 * AbstractBlock constructor
@@ -28,5 +32,34 @@ public class SerenityOre extends AbstractBlock {
 		setHarvestLevel(ToolStrings.PICKAXE, HarvestLevel.DIAMOND);
 		setSoundType(SoundType.GLASS);
 		setOreDictName(OreDict.SERENITY_ORE);
+	}
+
+	@Override
+	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+		return ModItems.SERENITY_DUST;
+	}
+
+	@Override
+	public int quantityDroppedWithBonus(int fortune, Random random) {
+		return RngHelper.blockQuantityDroppedWithBonus(fortune, random, FORTUNE_MULTIPLIER, DROPS_MIN_NORMAL, DROPS_MAX_NORMAL);
+	}
+
+	@Override
+	public int quantityDropped(Random random) {
+		return RngHelper.blockQuantityDropped(random, DROPS_MIN_NORMAL, DROPS_MAX_NORMAL);
+	}
+
+	@Override
+	public int getExpDrop(IBlockState state, net.minecraft.world.IBlockAccess world, BlockPos pos, int fortune) {
+		if (this.getItemDropped(state, RANDOM, fortune) != Item.getItemFromBlock(this)) {
+			return 1 + RANDOM.nextInt(5);
+		}
+
+		return 0;
+	}
+
+	@Override
+	protected ItemStack getSilkTouchDrop(IBlockState state) {
+		return new ItemStack(this);
 	}
 }
