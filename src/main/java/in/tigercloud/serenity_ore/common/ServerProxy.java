@@ -24,7 +24,7 @@ public class ServerProxy extends CommonProxy {
 	 *
 	 * @param event FML-Event
 	 */
-	@Override @Mod.EventHandler
+	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
 	}
