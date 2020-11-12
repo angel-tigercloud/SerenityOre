@@ -1,9 +1,8 @@
 package in.tigercloud.serenity_ore;
 
+import in.tigercloud.serenity_ore.common.ModBlocks;
 import in.tigercloud.serenity_ore.common.ServerProxy;
 import in.tigercloud.serenity_ore.lib.MainModInterface;
-import in.tigercloud.serenity_ore.lib.Names;
-import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -46,9 +45,7 @@ public class SerenityOre implements MainModInterface {
 			 */
 			@Override
 			public ItemStack getTabIconItem() {
-				return new ItemStack(
-						new in.tigercloud.serenity_ore.block.SerenityOre(Names.BLOCK_SERENITY_ORE, Material.ROCK)
-				);
+				return new ItemStack(ModBlocks.SERENITY_ORE);
 			}
 		};
 	}

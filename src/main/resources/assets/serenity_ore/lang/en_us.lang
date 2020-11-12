@@ -9,3 +9,4 @@ item.serenity_ore:serenity_dust.name=Serenity Gem Dust
 item.serenity_ore:serenity_pearl.name=Serenity Gem Pearl
 
 // Other
+itemGroup.serenity_ore:creative_tab=Serenity Ore Mod
