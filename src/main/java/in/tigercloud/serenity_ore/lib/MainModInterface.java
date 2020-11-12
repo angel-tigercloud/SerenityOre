@@ -1,6 +1,6 @@
 package in.tigercloud.serenity_ore.lib;
 
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -22,7 +22,7 @@ public interface MainModInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Mod.EventHandler
+	@EventHandler
 	void preInit(FMLPreInitializationEvent event);
 
 	/**
@@ -30,7 +30,7 @@ public interface MainModInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Mod.EventHandler
+	@EventHandler
 	void init(FMLInitializationEvent event);
 
 	/**
@@ -38,6 +38,6 @@ public interface MainModInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Mod.EventHandler
+	@EventHandler
 	void postInit(FMLPostInitializationEvent event);
 }
