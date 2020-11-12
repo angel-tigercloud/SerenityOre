@@ -1,5 +1,7 @@
 package in.tigercloud.serenity_ore.item;
 
+import in.tigercloud.serenity_ore.lib.OreDict;
+
 /**
  * Serenity Dust
  */
@@ -11,5 +13,6 @@ public class SerenityDust extends AbstractItem {
 	 */
 	public SerenityDust(String name) {
 		super(name);
+		setOreDictName(OreDict.SERENITY_DUST);
 	}
 }
