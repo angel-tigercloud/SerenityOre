@@ -11,6 +11,10 @@ import net.minecraft.block.material.Material;
  * Serenity Ore
  */
 public class SerenityOre extends AbstractBlock {
+	protected static final float FORTUNE_MULTIPLIER = 1.1f;
+	public static final int DROPS_MAX_NORMAL = 6;
+	public static final int DROPS_MIN_NORMAL = 3;
+
 	/**
 	 * AbstractBlock constructor
 	 *
