@@ -14,5 +14,5 @@ public class Reference {
 	public static final String RESOURCE_PREFIX = MOD_ID + ":";
 	public static final String FULL_MAIN_NAMESPACE = "in.tigercloud.serenity_ore";
 	public static Logger logger;
-	public static CreativeTabs creativeTab;
+	public static CreativeTabs defaultCreativeTab;
 }

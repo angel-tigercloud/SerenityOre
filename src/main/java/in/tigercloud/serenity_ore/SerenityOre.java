@@ -37,7 +37,7 @@ public class SerenityOre implements MainModInterface {
 	 */
 	@Override
 	public void initCreativeTabs() {
-		Reference.creativeTab = new CreativeTabs(Reference.RESOURCE_PREFIX + "creative_tab") {
+		Reference.defaultCreativeTab = new CreativeTabs(Reference.RESOURCE_PREFIX + "creative_tab") {
 			/**
 			 * Get the Tab-Icon
 			 *

@@ -27,6 +27,9 @@ public abstract class AbstractBlockFalling extends BlockFalling implements Block
 		this.setRegistryName(Reference.MOD_ID, name);
 		this.setUnlocalizedName(Objects.requireNonNull(this.getRegistryName()).toString());
 
+		// Default Creative Tab
+		setCreativeTab(Reference.defaultCreativeTab);
+
 		ModBlocks.BLOCKS.add(this);
 	}
 

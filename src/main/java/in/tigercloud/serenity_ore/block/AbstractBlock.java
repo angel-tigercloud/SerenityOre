@@ -24,8 +24,11 @@ public abstract class AbstractBlock extends Block implements BlockInterface {
 	public AbstractBlock(String name, Material material) {
 		super(material);
 
-		this.setRegistryName(Reference.MOD_ID, name);
-		this.setUnlocalizedName(Objects.requireNonNull(this.getRegistryName()).toString());
+		setRegistryName(Reference.MOD_ID, name);
+		setUnlocalizedName(Objects.requireNonNull(this.getRegistryName()).toString());
+
+		// Default Creative Tab
+		setCreativeTab(Reference.defaultCreativeTab);
 
 		ModBlocks.BLOCKS.add(this);
 	}
