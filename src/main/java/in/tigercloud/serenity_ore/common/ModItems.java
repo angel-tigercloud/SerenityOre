@@ -6,13 +6,16 @@ import in.tigercloud.serenity_ore.item.SerenityPearl;
 import in.tigercloud.serenity_ore.lib.Names;
 import net.minecraft.item.Item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Contains all Mod-the Items as Reference
  */
 public class ModItems {
-	public static final Item[] ITEMS = {
-			// Add Items here
-			new SerenityDust(Names.itemSerenityDust).setCreativeTab(Reference.creativeTab),
-			new SerenityPearl(Names.itemSerenityPearl).setCreativeTab(Reference.creativeTab)
-	};
+	// New Blocks should be added via the Constructor of the Block
+	public static final List<Item> ITEMS = new ArrayList<>();
+
+	public static final Item SERENITY_DUST = new SerenityDust(Names.ITEM_SERENITY_DUST).setCreativeTab(Reference.creativeTab);
+	public static final Item SERENITY_PEARL = new SerenityPearl(Names.ITEM_SERENITY_PEARL).setCreativeTab(Reference.creativeTab);
 }

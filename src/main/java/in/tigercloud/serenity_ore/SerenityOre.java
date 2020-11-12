@@ -47,7 +47,7 @@ public class SerenityOre implements MainModInterface {
 			@Override
 			public ItemStack getTabIconItem() {
 				return new ItemStack(
-						new in.tigercloud.serenity_ore.block.SerenityOre(Names.blockSerenityOre, Material.ROCK)
+						new in.tigercloud.serenity_ore.block.SerenityOre(Names.BLOCK_SERENITY_ORE, Material.ROCK)
 				);
 			}
 		};

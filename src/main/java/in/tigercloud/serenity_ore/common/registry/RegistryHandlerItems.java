@@ -1,5 +1,6 @@
-package in.tigercloud.serenity_ore.common;
+package in.tigercloud.serenity_ore.common.registry;
 
+import in.tigercloud.serenity_ore.common.ModItems;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +18,6 @@ public class RegistryHandlerItems {
 	 */
 	@SubscribeEvent
 	public static void registerItems(Register<Item> event) {
-		event.getRegistry().registerAll(ModItems.ITEMS);
+		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
 	}
 }

@@ -1,6 +1,8 @@
-package in.tigercloud.serenity_ore.common;
+package in.tigercloud.serenity_ore.common.registry;
 
 import in.tigercloud.serenity_ore.Reference;
+import in.tigercloud.serenity_ore.common.ModBlocks;
+import in.tigercloud.serenity_ore.common.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

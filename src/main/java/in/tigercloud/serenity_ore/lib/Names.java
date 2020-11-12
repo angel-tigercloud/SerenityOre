@@ -1,7 +1,6 @@
 package in.tigercloud.serenity_ore.lib;
 
 import in.tigercloud.serenity_ore.Reference;
-import in.tigercloud.serenity_ore.SerenityOre;
 
 /**
  * Contains all Names of Items/Blocks/Tool etc
@@ -10,12 +9,14 @@ import in.tigercloud.serenity_ore.SerenityOre;
  */
 public class Names {
 	// Items
-	public final static String itemSerenityDust = "serenity_dust";
-	public final static String itemSerenityPearl = "serenity_pearl";
+	public final static String ITEM_SERENITY_DUST = "serenity_dust";
+	public final static String ITEM_SERENITY_PEARL = "serenity_pearl";
 
 	// Blocks
-	public final static String blockSerenityOre = "serenity_ore";
-	public final static String blockSugar = "sugar_block";
+	public final static String BLOCK_SERENITY_ORE = "serenity_ore";
+	public final static String BLOCK_SERENITY_ORE_NETHER = "serenity_ore_nether";
+	public final static String BLOCK_SERENITY_ORE_END = "serenity_ore_end";
+	public final static String BLOCK_SUGAR = "sugar_block";
 
 	// ----------------------------------------------------------
 	// Helper methods below

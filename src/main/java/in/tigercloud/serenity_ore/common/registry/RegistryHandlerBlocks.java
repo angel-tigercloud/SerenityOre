@@ -1,5 +1,6 @@
-package in.tigercloud.serenity_ore.common;
+package in.tigercloud.serenity_ore.common.registry;
 
+import in.tigercloud.serenity_ore.common.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -20,8 +21,8 @@ public class RegistryHandlerBlocks {
 	 * @param event Registry Event
 	 */
 	@SubscribeEvent
-	public static void registerBlocks(Register<Block> event) {
-		event.getRegistry().registerAll(ModBlocks.BLOCKS);
+	public static void onBlockRegister(Register<Block> event) {
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 	}
 
 	/**
