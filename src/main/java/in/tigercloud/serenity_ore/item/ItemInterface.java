@@ -8,4 +8,11 @@ public interface ItemInterface {
 	 * Registers the Item/Block to the Ore-Dict if their Name is Set
 	 */
 	void registerOreDict();
+
+	/**
+	 * Sets the OreDictionary Name
+	 *
+	 * @param oreDictName Name
+	 */
+	void setOreDictName(String oreDictName);
 }

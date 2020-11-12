@@ -31,6 +31,16 @@ public abstract class AbstractBlockFalling extends BlockFalling implements Block
 	}
 
 	/**
+	 * Sets the OreDictionary Name
+	 *
+	 * @param oreDictName Name
+	 */
+	@Override
+	public void setOreDictName(String oreDictName) {
+		this.oreDictName = oreDictName;
+	}
+
+	/**
 	 * Registers the Item/Block to the Ore-Dict if their Name is Set
 	 */
 	@Override
