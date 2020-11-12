@@ -1,6 +1,6 @@
 package in.tigercloud.serenity_ore.common;
 
-import in.tigercloud.serenity_ore.Reference;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 /**
  * Server Proxy
  */
-public class ServerProxy implements ProxyInterface {
+public class ServerProxy extends CommonProxy {
 	/**
 	 * Method called in the Forge Pre-Initialization
 	 *
@@ -16,7 +16,7 @@ public class ServerProxy implements ProxyInterface {
 	 */
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
-		Reference.logger = event.getModLog();
+		super.preInit(event);
 	}
 
 	/**
@@ -24,8 +24,10 @@ public class ServerProxy implements ProxyInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Override
-	public void init(FMLInitializationEvent event) {}
+	@Override @Mod.EventHandler
+	public void init(FMLInitializationEvent event) {
+		super.init(event);
+	}
 
 	/**
 	 * Method called in the Forge Post-Initialization
@@ -33,5 +35,7 @@ public class ServerProxy implements ProxyInterface {
 	 * @param event FML-Event
 	 */
 	@Override
-	public void postInit(FMLPostInitializationEvent event) {}
+	public void postInit(FMLPostInitializationEvent event) {
+		super.postInit(event);
+	}
 }

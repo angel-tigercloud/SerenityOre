@@ -1,11 +1,11 @@
 package in.tigercloud.serenity_ore;
 
+import in.tigercloud.serenity_ore.common.CommonProxy;
 import in.tigercloud.serenity_ore.common.ModBlocks;
-import in.tigercloud.serenity_ore.common.ServerProxy;
-import in.tigercloud.serenity_ore.lib.MainModInterface;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -17,25 +17,23 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  * @author Tigercloud
  */
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = Reference.DEPENDENCIES)
-public class SerenityOre implements MainModInterface {
+public class SerenityOre {
 	@Mod.Instance(Reference.MOD_ID)
 	public static SerenityOre instance;
 
 	@SidedProxy(clientSide = Reference.FULL_MAIN_NAMESPACE + ".common.ClientProxy", serverSide = Reference.FULL_MAIN_NAMESPACE + ".common.ServerProxy")
-	public static ServerProxy proxy;
+	public static CommonProxy proxy;
 
 	/**
 	 * SerenityOre Constructor
 	 */
 	public SerenityOre() {
-		instance = this;
 		initCreativeTabs();
 	}
 
 	/**
 	 * Inits all Creative Tabs
 	 */
-	@Override
 	public void initCreativeTabs() {
 		Reference.defaultCreativeTab = new CreativeTabs(Reference.RESOURCE_PREFIX + "creative_tab") {
 			/**
@@ -55,7 +53,7 @@ public class SerenityOre implements MainModInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Override
+	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
 	}
@@ -65,7 +63,7 @@ public class SerenityOre implements MainModInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Override
+	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
 	}
@@ -75,7 +73,7 @@ public class SerenityOre implements MainModInterface {
 	 *
 	 * @param event FML-Event
 	 */
-	@Override
+	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
 	}
