@@ -38,6 +38,9 @@ minecraft {
         client {
             workingDirectory project.file('run')
 
+            // Use a Custom Username (Uncomment then)
+            //args '--username=Playername'
+
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
 
