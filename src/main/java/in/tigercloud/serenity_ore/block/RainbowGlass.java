@@ -18,7 +18,7 @@ public class RainbowGlass extends AbstractBlockGlass {
 	public static int DROPS_MIN_NORMAL = 0;
 
 	/**
-	 * AbstractBlock constructor
+	 * AbstractBlockGlass constructor
 	 *
 	 * @param name     Name of the Block
 	 * @param material Material of the Block

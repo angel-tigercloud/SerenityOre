@@ -21,7 +21,7 @@ public abstract class AbstractBlockGlass extends BlockGlass implements BlockInte
 	public String oreDictName = null;
 
 	/**
-	 * AbstractBlock constructor
+	 * AbstractBlockGlass constructor
 	 *
 	 * @param name Name of the Block
 	 * @param material Material of the Block

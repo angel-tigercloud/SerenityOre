@@ -17,7 +17,7 @@ public class MoltenPearls extends RainbowGlass {
 	public static int DROPS_MIN_NORMAL = 2;
 
 	/**
-	 * AbstractBlock constructor
+	 * AbstractBlockGlass constructor
 	 *
 	 * @param name             Name of the Block
 	 * @param material         Material of the Block

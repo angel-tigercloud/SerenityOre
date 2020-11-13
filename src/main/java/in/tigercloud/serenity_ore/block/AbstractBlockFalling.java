@@ -16,7 +16,7 @@ public abstract class AbstractBlockFalling extends BlockFalling implements Block
 	public String oreDictName = null;
 
 	/**
-	 * AbstractBlock constructor
+	 * AbstractBlockFalling constructor
 	 *
 	 * @param name Name of the Block
 	 * @param material Material of the Block

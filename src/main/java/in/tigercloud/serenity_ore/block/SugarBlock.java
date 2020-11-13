@@ -15,7 +15,7 @@ import java.util.Random;
  */
 public class SugarBlock extends AbstractBlockFalling {
 	/**
-	 * AbstractBlock constructor
+	 * AbstractBlockFalling constructor
 	 *
 	 * @param name     Name of the Block
 	 * @param material Material of the Block

@@ -21,8 +21,8 @@ public abstract class AbstractItem extends Item implements ItemInterface {
 	 * @param name Name of the Item
 	 */
 	public AbstractItem(String name) {
-		this.setRegistryName(new ResourceLocation(Reference.MOD_ID, name));
-		this.setUnlocalizedName(Objects.requireNonNull(this.getRegistryName()).toString());
+		setRegistryName(new ResourceLocation(Reference.MOD_ID, name));
+		setUnlocalizedName(Objects.requireNonNull(this.getRegistryName()).toString());
 
 		// Default Creative Tab
 		setCreativeTab(Reference.defaultCreativeTab);
