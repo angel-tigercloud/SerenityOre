@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "PSP",
+    "SPS",
+    "PSP"
+  ],
+  "key":
+  {
+    "P":
+    {
+      "item": "serenity_ore:pearl_block"
+    },
+    "S":
+    {
+      "item": "serenity_ore:sugar_block"
+    }
+  },
+  "result":
+  {
+    "item": "serenity_ore:rainbow_glass",
+    "count": 9
+  }
+}

@@ -5,6 +5,9 @@ import net.minecraft.block.material.Material;
 
 import java.util.Random;
 
+/**
+ * Serenity Ore End
+ */
 public class SerenityOreEnd extends SerenityOre {
 	public static final int DROPS_MAX_NORMAL = 8;
 	public static final int DROPS_MIN_NORMAL = 4;

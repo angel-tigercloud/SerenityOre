@@ -1,6 +1,5 @@
 package in.tigercloud.serenity_ore.block;
 
-import in.tigercloud.serenity_ore.common.ModItems;
 import in.tigercloud.serenity_ore.lib.*;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

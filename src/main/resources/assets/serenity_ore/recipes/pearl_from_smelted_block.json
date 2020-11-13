@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "serenity_ore:molten_pearls"
+    }
+  ],
+  "result":
+  {
+    "item": "serenity_ore:serenity_pearl",
+    "count": 6
+  }
+}

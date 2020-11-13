@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key":
+  {
+    "P":
+    {
+      "item": "serenity_ore:serenity_pearl"
+    }
+  },
+  "result":
+  {
+    "item": "serenity_ore:pearl_block",
+    "count": 1
+  }
+}

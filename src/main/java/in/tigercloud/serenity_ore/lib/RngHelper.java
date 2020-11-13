@@ -17,6 +17,9 @@ public class RngHelper {
 	 * @return Drop Item count
 	 */
 	public static int blockQuantityDroppedWithBonus(int fortune, Random random, int fortuneMultiplier, int minDrops, int maxDrops) {
+		if(fortuneMultiplier == 0)
+			return blockQuantityDropped(random, minDrops, maxDrops);
+
 		return blockQuantityDropped(random, minDrops, maxDrops) + random.nextInt(fortune + fortuneMultiplier);
 	}
 

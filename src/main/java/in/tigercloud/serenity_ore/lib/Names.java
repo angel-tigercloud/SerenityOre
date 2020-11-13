@@ -17,6 +17,9 @@ public class Names {
 	public final static String BLOCK_SERENITY_ORE_NETHER = "serenity_ore_nether";
 	public final static String BLOCK_SERENITY_ORE_END = "serenity_ore_end";
 	public final static String BLOCK_SUGAR = "sugar_block";
+	public static final String BLOCK_GLASS_RAINBOW = "rainbow_glass";
+	public static final String BLOCK_MOLTEN_PEARLS = "molten_pearls";
+	public static final String BLOCK_PEARL = "pearl_block";
 
 	// ----------------------------------------------------------
 	// Helper methods below
