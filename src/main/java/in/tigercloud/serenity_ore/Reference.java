@@ -13,6 +13,8 @@ public class Reference {
 	public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2854,)";
 	public static final String RESOURCE_PREFIX = MOD_ID + ":";
 	public static final String FULL_MAIN_NAMESPACE = "in.tigercloud.serenity_ore";
+	public static final boolean DEFAULT_CREATIVE_TAB_FOR_TOOLS_ARMOR = false;
+
 	public static Logger logger;
 	public static CreativeTabs defaultCreativeTab;
 }
