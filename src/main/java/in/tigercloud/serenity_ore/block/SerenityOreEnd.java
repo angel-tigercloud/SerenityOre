@@ -9,8 +9,8 @@ import java.util.Random;
  * Serenity Ore End
  */
 public class SerenityOreEnd extends SerenityOre {
-	public static final int DROPS_MAX_NORMAL = 8;
-	public static final int DROPS_MIN_NORMAL = 4;
+	public static final int DROPS_MAX_NORMAL = 3;
+	public static final int DROPS_MIN_NORMAL = 2;
 
 	/**
 	 * AbstractBlock constructor

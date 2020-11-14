@@ -2,7 +2,7 @@ package in.tigercloud.serenity_ore.block;
 
 import in.tigercloud.serenity_ore.Reference;
 import in.tigercloud.serenity_ore.common.ModBlocks;
-import in.tigercloud.serenity_ore.lib.BlockHardness;
+import in.tigercloud.serenity_ore.lib.vanilla.BlockHardness;
 import net.minecraft.block.BlockGlass;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

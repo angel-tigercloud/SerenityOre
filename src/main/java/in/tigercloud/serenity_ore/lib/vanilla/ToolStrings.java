@@ -1,4 +1,4 @@
-package in.tigercloud.serenity_ore.lib;
+package in.tigercloud.serenity_ore.lib.vanilla;
 
 /**
  * Class Contains Tool-Strings for Harvest-Level

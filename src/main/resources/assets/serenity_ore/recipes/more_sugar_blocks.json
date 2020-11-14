@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "serenity_ore:pearl_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    },
+    {
+      "item": "serenity_ore:sugar_block"
+    }
+  ],
+  "result":
+  {
+    "item": "serenity_ore:sugar_block",
+    "count": 10
+  }
+}

@@ -9,8 +9,8 @@ import java.util.Random;
  * Serenity Ore Nether
  */
 public class SerenityOreNether extends SerenityOre {
-	public static final int DROPS_MAX_NORMAL = 7;
-	public static final int DROPS_MIN_NORMAL = 4;
+	public static final int DROPS_MAX_NORMAL = 3;
+	public static final int DROPS_MIN_NORMAL = 1;
 
 	/**
 	 * AbstractBlock constructor

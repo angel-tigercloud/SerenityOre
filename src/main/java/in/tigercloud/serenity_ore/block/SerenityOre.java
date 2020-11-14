@@ -2,6 +2,10 @@ package in.tigercloud.serenity_ore.block;
 
 import in.tigercloud.serenity_ore.common.ModItems;
 import in.tigercloud.serenity_ore.lib.*;
+import in.tigercloud.serenity_ore.lib.vanilla.BlockHardness;
+import in.tigercloud.serenity_ore.lib.vanilla.HarvestLevel;
+import in.tigercloud.serenity_ore.lib.vanilla.LightLevel;
+import in.tigercloud.serenity_ore.lib.vanilla.ToolStrings;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -16,8 +20,8 @@ import java.util.Random;
  */
 public class SerenityOre extends AbstractBlock {
 	public static int FORTUNE_MULTIPLIER = 1;
-	public static int DROPS_MAX_NORMAL = 6;
-	public static int DROPS_MIN_NORMAL = 3;
+	public static int DROPS_MAX_NORMAL = 2;
+	public static int DROPS_MIN_NORMAL = 1;
 
 	/**
 	 * AbstractBlock constructor
@@ -32,6 +36,7 @@ public class SerenityOre extends AbstractBlock {
 		setHarvestLevel(ToolStrings.PICKAXE, HarvestLevel.DIAMOND);
 		setSoundType(SoundType.GLASS);
 		setOreDictName(OreDict.SERENITY_ORE);
+		setLightLevel(LightLevel.REDSTONE_TORCH);
 	}
 
 	@Override

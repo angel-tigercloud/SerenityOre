@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "PSP",
-    "SPS",
-    "PSP"
+    "DSD",
+    "SDS",
+    "DSD"
   ],
   "key":
   {
-    "P":
+    "D":
     {
-      "item": "serenity_ore:pearl_block"
+      "item": "serenity_ore:serenity_dust"
     },
     "S":
     {
@@ -19,7 +19,7 @@
   },
   "result":
   {
-    "item": "serenity_ore:rainbow_glass",
-    "count": 9
+    "item": "serenity_ore:dust_mixture_block",
+    "count": 5
   }
 }

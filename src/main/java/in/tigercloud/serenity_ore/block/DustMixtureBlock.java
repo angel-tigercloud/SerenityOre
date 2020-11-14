@@ -9,22 +9,22 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 /**
- * Pearl Block
+ * Dust Mixture Block
  */
-public class PearlBlock extends AbstractBlock {
+public class DustMixtureBlock extends AbstractBlockFalling {
 	/**
-	 * AbstractBlock constructor
+	 * AbstractBlockFalling constructor
 	 *
 	 * @param name     Name of the Block
 	 * @param material Material of the Block
 	 */
-	public PearlBlock(String name, Material material) {
+	public DustMixtureBlock(String name, Material material) {
 		super(name, material);
 
-		setHardness(BlockHardness.IRON_BLOCK * 2);
-		setHarvestLevel(ToolStrings.PICKAXE, HarvestLevel.DIAMOND);
-		setSoundType(SoundType.METAL);
-		setLightLevel(LightLevel.REDSTONE_ORE);
-		setOreDictName(OreDict.SERENITY_PEARL_BLOCK);
+		setHardness(BlockHardness.SAND);
+		setSoundType(SoundType.SAND);
+		setHarvestLevel(ToolStrings.SHOVEL, HarvestLevel.WOOD);
+		setOreDictName(OreDict.DUST_MIXTURE_BLOCK);
+		setLightLevel(LightLevel.REDSTONE_TORCH);
 	}
 }

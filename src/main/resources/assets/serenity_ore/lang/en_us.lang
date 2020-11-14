@@ -2,11 +2,32 @@
 tile.serenity_ore:serenity_ore.name=Serenity Gem Ore
 tile.serenity_ore:serenity_ore_nether.name=Nether Serenity Gem Ore
 tile.serenity_ore:serenity_ore_end.name=End Serenity Gem Ore
+tile.serenity_ore:molten_pearls.name=Molten Pearl Glass
+tile.serenity_ore:rainbow_glass.name=Rainbow Glass
 tile.serenity_ore:sugar_block.name=Sugar Block
+tile.serenity_ore:pearl_block.name=Serenity Pearl Block
+tile.serenity_ore:dust_mixture_block.name=Serenity Dust Mixture Block
 
 // Items
 item.serenity_ore:serenity_dust.name=Serenity Gem Dust
 item.serenity_ore:serenity_pearl.name=Serenity Gem Pearl
+item.serenity_ore:rainbow_ingot.name=Rainbow Ingot
+
+// Tools & Weapons
+item.serenity_ore:tigerclouds_pickaxe.name=Tigercloud's Pickaxe
+item.serenity_ore:tigerclouds_sword.name=Tigercloud's Sword
+
+// Use/Event Messages
+item.serenity_ore:tigerclouds_pickaxe.heal_action.message=You feel a strong Angelic presence protecting you, but you feel weaker~
+item.serenity_ore:tigerclouds_pickaxe.heal_action_fail.message=The Item glows but nothing else happens, try it again when in danger!
+item.serenity_ore:tigerclouds_pickaxe.heal_other_target_action.message=You feel a warm presence.
+item.serenity_ore:tigerclouds_pickaxe.heal_other_attacker_action.message=You used some of the Picks Power to heal %s.
+item.serenity_ore:tigerclouds_sword.player_attack.message=Tigercloud: Hurting other people is sinning~
+
+// Lore
+item.serenity_ore:tigerclouds_sword.lore1=Angelic Sword, use with caution!
+item.serenity_ore:tigerclouds_pickaxe.lore1=Stores some of Angel Tigerclouds power
+item.serenity_ore:tigerclouds_pickaxe.lore2=Use it when in danger
 
 // Other
 itemGroup.serenity_ore:creative_tab=Serenity Ore Mod

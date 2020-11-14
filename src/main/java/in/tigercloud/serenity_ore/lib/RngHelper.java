@@ -6,6 +6,23 @@ import java.util.Random;
  * Helper class for RNG-Methods
  */
 public class RngHelper {
+	private static final Random RANDOM = new Random();
+
+	/**
+	 * Returns if the chance succeed
+	 *
+	 * @param chance Percentage of the Chance (0-100)
+	 * @return Succeed
+	 */
+	public static boolean chance(int chance) {
+		if(chance > 100)
+			chance = 100;
+		if(chance < 0)
+			chance = 0;
+
+		return chance >= (RANDOM.nextInt(100) + 1);
+	}
+
 	/**
 	 * Returns how many Items a Block drops (with enchantment)
 	 *

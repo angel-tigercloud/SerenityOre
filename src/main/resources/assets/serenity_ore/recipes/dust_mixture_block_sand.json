@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "DSD",
+    "SDS",
+    "DSD"
+  ],
+  "key":
+  {
+    "D":
+    {
+      "item": "serenity_ore:serenity_dust"
+    },
+    "S":
+    {
+      "item": "minecraft:sand"
+    }
+  },
+  "result":
+  {
+    "item": "serenity_ore:dust_mixture_block",
+    "count": 5
+  }
+}

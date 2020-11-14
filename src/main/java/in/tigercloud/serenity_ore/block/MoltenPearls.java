@@ -1,6 +1,7 @@
 package in.tigercloud.serenity_ore.block;
 
 import in.tigercloud.serenity_ore.common.ModItems;
+import in.tigercloud.serenity_ore.lib.OreDict;
 import in.tigercloud.serenity_ore.lib.RngHelper;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -25,6 +26,8 @@ public class MoltenPearls extends RainbowGlass {
 	 */
 	public MoltenPearls(String name, Material material, boolean ignoreSimilarity) {
 		super(name, material, ignoreSimilarity);
+
+		setOreDictName(OreDict.SERENITY_PEARL_GLASS);
 	}
 
 	@Override

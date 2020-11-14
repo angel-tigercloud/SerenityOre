@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "III",
+    " S ",
+    " S "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:stick"
+    },
+    "I":
+    {
+      "item": "serenity_ore:rainbow_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "serenity_ore:tigerclouds_pickaxe",
+    "count": 1
+  }
+}

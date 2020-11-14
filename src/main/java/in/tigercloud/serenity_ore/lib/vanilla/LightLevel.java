@@ -1,4 +1,4 @@
-package in.tigercloud.serenity_ore.lib;
+package in.tigercloud.serenity_ore.lib.vanilla;
 
 /**
  * Contains some Light-Level references

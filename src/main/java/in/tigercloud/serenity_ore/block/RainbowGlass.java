@@ -1,7 +1,8 @@
 package in.tigercloud.serenity_ore.block;
 
 import in.tigercloud.serenity_ore.common.ModItems;
-import in.tigercloud.serenity_ore.lib.LightLevel;
+import in.tigercloud.serenity_ore.lib.vanilla.LightLevel;
+import in.tigercloud.serenity_ore.lib.OreDict;
 import in.tigercloud.serenity_ore.lib.RngHelper;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -29,6 +30,7 @@ public class RainbowGlass extends AbstractBlockGlass {
 
 		setLightLevel(LightLevel.FURNACE);
 		setLightOpacity(0);
+		setOreDictName(OreDict.RAINBOW_GLASS);
 	}
 
 	@Override
