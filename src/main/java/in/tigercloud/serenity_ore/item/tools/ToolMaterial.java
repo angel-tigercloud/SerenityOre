@@ -14,7 +14,7 @@ public class ToolMaterial {
 			HarvestLevel.DIAMOND,
 			ToolDurability.DIAMOND,
 			Efficiency.GOLD,
-			Damage.WOOD,
+			Damage.DIAMOND,
 			Enchantability.NONE
 	);
 }
