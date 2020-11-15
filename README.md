@@ -11,7 +11,7 @@ The Gem-Item drops when mining the Ore without a Silk-Touch pickaxe.
 No, I won't upgrade it. Feel free to fork and do it yourself
 
 ## World Gen with COFH
-As mentioned you CAN you COFHs world-gen to add these Ores to the world. The example config for COFH is [here](https://github.com/angel-tigercloud/SerenityOre/blob/master/cofh_gen_serenityore.json)
+As mentioned you CAN use COFHs world-gen to add these Ores to the world. The example config for COFH is [here](https://github.com/angel-tigercloud/SerenityOre/blob/master/cofh_gen_serenityore.json)
 
 Just drop the config in the /config/cofh/world/ folder and start the game/server, thats all.
 
