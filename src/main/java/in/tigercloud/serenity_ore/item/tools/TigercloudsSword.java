@@ -50,6 +50,9 @@ public class TigercloudsSword extends AbstractSword {
 	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
 		if(target.attackable() && target instanceof EntityPlayer) {
+			if(((EntityPlayer) target).isCreative())
+				return true;
+
 			attacker.setFire(10);
 			attacker.addPotionEffect(new PotionEffect(MobEffects.GLOWING, Helpers.secToTicks(10), 0));
 
@@ -61,7 +64,9 @@ public class TigercloudsSword extends AbstractSword {
 				));
 			}
 
-			stack.damageItem(stack.getMaxDamage() / 10, attacker);
+			stack.damageItem(stack.getMaxDamage() / 10, target);
+
+			return true;
 		} else if(target.attackable() && target.isCreatureType(EnumCreatureType.MONSTER, false)) {
 			if(RngHelper.chance(25))
 				target.setFire(10);
