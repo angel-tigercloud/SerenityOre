@@ -69,7 +69,8 @@ public class TigercloudsPickaxe extends AbstractPickaxe {
 
 			// Set Food Level full
 			foodStats.setFoodLevel(new FoodStats().getFoodLevel());
-			foodStats.setFoodSaturationLevel(new FoodStats().getSaturationLevel());
+			if(worldIn.isRemote)
+				foodStats.setFoodSaturationLevel(new FoodStats().getSaturationLevel());
 
 			// Inform the Player
 			if(playerIn.world.isRemote) {
@@ -99,11 +100,13 @@ public class TigercloudsPickaxe extends AbstractPickaxe {
 			target.setFire(10);
 			stack.damageItem(100, target);
 		} else if(target instanceof EntityPlayer && target.getHealth() < target.getMaxHealth()) {
-			target.sendMessage(new TextComponentTranslation(
-					getUnlocalizedName() + ".heal_other_target_action.message"
-			).setStyle(
-					new Style().setColor(TextFormatting.RED).setItalic(true)
-			));
+			if(target.world.isRemote) {
+				target.sendMessage(new TextComponentTranslation(
+						getUnlocalizedName() + ".heal_other_target_action.message"
+				).setStyle(
+						new Style().setColor(TextFormatting.RED).setItalic(true)
+				));
+			}
 
 			if(attacker.world.isRemote) {
 				attacker.sendMessage(new TextComponentTranslation(
@@ -116,6 +119,8 @@ public class TigercloudsPickaxe extends AbstractPickaxe {
 			target.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, Helpers.secToTicks(10), 1));
 			target.addPotionEffect(new PotionEffect(MobEffects.GLOWING, Helpers.secToTicks(10), 1));
 			stack.damageItem(stack.getMaxDamage() / 4 + 1, target);
+
+			return true;
 		}
 
 		return super.hitEntity(stack, target, attacker);
